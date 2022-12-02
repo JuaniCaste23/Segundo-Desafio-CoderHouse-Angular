@@ -1,1 +1,17 @@
-<p>lista-de-alumnos works!</p>
+<section class="container">
+  <h2 class="container__title">LISTA DE ALUMNOS</h2>
+  <ul class="container__list">
+    <li *ngFor="let ListaDeAlumnosModel of alumnos">
+      <p>Nombre: {{ ListaDeAlumnosModel.firstName }}</p>
+      <p>Apellido: {{ ListaDeAlumnosModel.lastName }}</p>
+      <p [ngClass]="ListaDeAlumnosModel.boolean ? 'active-color' : 'active-color2'">Carrera: {{ ListaDeAlumnosModel.carrera }}</p>
+    </li>
+</ul>
+</section>
+
+<!-- <li *ngFor="let ListaDeAlumnosModel of alumnos">
+  {{ ListaDeAlumnosModel.firstName }}
+  {{ ListaDeAlumnosModel.lastName }}
+  {{ ListaDeAlumnosModel.carrera }}
+  {{ ListaDeAlumnosModel.clasificacion }}
+</li> -->
