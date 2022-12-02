@@ -3,6 +3,7 @@
   height: 100%;
   background-color: rgb(218, 207, 172);
   border: 6px double #000;
+  font-family: 'Roboto';
 }
 
 .container__title {
