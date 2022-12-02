@@ -1,24 +1,27 @@
 interface AlumnosContract {
-  firstName: string;
-  lastName: string;
+  nombre: string;
+  apellido: string;
   carrera: string;
+  fechaDeIngreso: Date;
   boolean: boolean;
 
 }
 
 export class ListaDeAlumnosModel implements AlumnosContract{
 
-  firstName: string;
-  lastName: string;
+  nombre: string;
+  apellido: string;
   carrera: string;
+  fechaDeIngreso: Date;
   boolean: boolean;
 
 
-  constructor(firstName: string, lastName: string, carrera: string, boolean: boolean)
+  constructor(nombre: string, apellido: string, carrera: string, fechaDeIngreso: Date, boolean: boolean)
   {
-    this.firstName = firstName;
-    this.lastName = lastName;
+    this.nombre = nombre;
+    this.apellido = apellido;
     this.carrera = carrera;
+    this.fechaDeIngreso = fechaDeIngreso;
     this.boolean = boolean;
   }
 

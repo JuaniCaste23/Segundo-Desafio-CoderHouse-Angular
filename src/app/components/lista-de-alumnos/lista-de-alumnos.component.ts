@@ -10,12 +10,12 @@ export class ListaDeAlumnosComponent implements OnInit {
 
     public alumnos: ListaDeAlumnosModel[] = [
 
-      new ListaDeAlumnosModel('Juan','Castelli','Matematica',false),
-      new ListaDeAlumnosModel('Seba','Holowaty','Literatura',false),
-      new ListaDeAlumnosModel('Ignacio','Gomez','Sistemas',true),
-      new ListaDeAlumnosModel('Leonel','Castro','Matematica',false),
-      new ListaDeAlumnosModel('Goku','Son','Sistemas',true),
-      new ListaDeAlumnosModel('Leonel','Messi','Futbol',false)
+      new ListaDeAlumnosModel('Juan','Castelli','Matematica',new Date(2022,10,23),false),
+      new ListaDeAlumnosModel('Seba','Holowaty','Literatura',new Date(2022,10,25),false),
+      new ListaDeAlumnosModel('Ignacio','Gomez','Sistemas',new Date(2022,11,23),true),
+      new ListaDeAlumnosModel('Leonel','Castro','Matematica',new Date(2022,11,21),false),
+      new ListaDeAlumnosModel('Goku','Son','Sistemas',new Date(2022,10,24),true),
+      new ListaDeAlumnosModel('Leonel','Messi','Futbol',new Date(2022,11,11),false)
 
     ]
 

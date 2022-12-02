@@ -1,10 +1,12 @@
 <section class="container">
   <h2 class="container__title">LISTA DE ALUMNOS</h2>
+  <h3 class="container__subtitle">(Aclaración!! Sistemas se pondra en rojo, y las demás en verde)</h3>
   <ul class="container__list">
     <li *ngFor="let ListaDeAlumnosModel of alumnos">
-      <p>Nombre: {{ ListaDeAlumnosModel.firstName }}</p>
-      <p>Apellido: {{ ListaDeAlumnosModel.lastName }}</p>
+      <p>Nombre: {{ ListaDeAlumnosModel.nombre }}</p>
+      <p>Apellido: {{ ListaDeAlumnosModel.apellido }}</p>
       <p [ngClass]="ListaDeAlumnosModel.boolean ? 'active-color' : 'active-color2'">Carrera: {{ ListaDeAlumnosModel.carrera }}</p>
+      <p>Fecha de Ingreso: {{ ListaDeAlumnosModel.fechaDeIngreso | date }}</p>
     </li>
 </ul>
 </section>
