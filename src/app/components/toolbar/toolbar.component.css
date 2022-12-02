@@ -2,6 +2,9 @@
   display: flex;
   background-color: #F6EADE;
   justify-content: flex-end;
+  position: fixed;
+  width: 100%;
+  z-index: 86;
 }
 
 .toolbar ul {
