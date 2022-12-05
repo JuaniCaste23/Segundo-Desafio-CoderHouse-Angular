@@ -1,4 +1,4 @@
-interface AlumnosContract {
+interface AlumnoContract {
   nombre: string;
   apellido: string;
   carrera: string;
@@ -7,7 +7,7 @@ interface AlumnosContract {
 
 }
 
-export class ListaDeAlumnosModel implements AlumnosContract{
+export class AlumnoModel implements AlumnoContract{
 
   nombre: string;
   apellido: string;
